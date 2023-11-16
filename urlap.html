@@ -1,1 +1,100 @@
+Radácsi Bence
+<!DOCTYPE html>
+<html lang="hu">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap SP</title>
+</head>
+
+<body>
+
+    <h1>SP BOLT-JA</h1>
+
+    <form action="">
+
+        <fieldset>
+            <legend>Rendeléshez</legend>
+            <br>
+            <input type="text" placeholder="Add meg a neved">
+            <br>
+            <input type="tel" name="tel" id="tel" placeholder="telószámod">
+            <br><br>
+            <input type="email" name="nev" id="mail" placeholder="email címed">
+            <br>
+            <h4>Add meg a nemed:</h4>
+            <input type="radio" name="nem" id="fiu">
+            <label for="fiu">FIÚ</label>
+            <input type="radio" name="nem" id="lany">
+            <label for="lany">LÁNY</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>KENYÉR</legend>
+
+            <input type="radio" name="barmi" id="p1">
+            <label for="p1">0.25kg</label>
+
+            <input type="radio" name="barmi" id="p2" checked>
+            <label for="p2">0.5kg</label>
+
+            <input type="radio" name="barmi" id="p3">
+            <label for="p3">0.75kg</label>
+
+            <input type="radio" name="barmi" id="p4">
+            <label for="p4">1kg</label>
+
+            <input type="radio" name="barmi" id="p5">
+            <label for="p5">1.25kg</label>
+
+            <br>
+            <label for="db">Mennyi legyen?</label>
+            <input type="number" name="db" id="db" value="1" min="1" max="3" style="width: 25px;"> db
+
+        </fieldset>
+
+        <fieldset>
+            <legend>PAPRIKA ERŐSSÉGE</legend>
+            <input type="radio" name="paprika" id="pap1">
+            <label for="pap1">enyhe</label>
+            <br>
+            <input type="radio" name="paprika" id="pap2">
+            <label for="pap2">közepes</label>
+            <br>
+            <input type="radio" name="paprika" id="pap3" checked>
+            <label for="pap3">csípős</label>
+            <input type="range" name="erosseg" id="eros">
+        </fieldset>
+        <fieldset>
+            <legend>SAJT</legend>
+            <input type="checkbox" name="sajt" id="s1">
+            <label for="s1">EDAMI</label>
+            <br>
+            <input type="checkbox" name="sajt" id="s2">
+            <label for="s2">TRAPPISTA</label>
+            <br>
+            <input type="checkbox" name="sajt" id="s3">
+            <label for="s3">PARMEZÁN</label>
+        </fieldset>
+        <fieldset>
+            <legend>Rendelés idő</legend>
+            <label for="ido">kiszállítás ideje:</label>
+            <br>
+            <input type="date" name="ido" id="ido">
+            <br>
+            <input type="time" name="ido" id="ido2">
+        </fieldset>
+        <br>
+        <input type="checkbox" name="felh" id="felh" checked>
+        <label for="felh">A felhasználói feltételek elfogadása!</label>
+        <br><br>
+        <input type="button" value="RENDELÉS!">
+        <input type="reset" value="VISSZAVONÁS">
+
+    </form>
+
+
+</body>
+
+</html>
